@@ -23,19 +23,3 @@ document.addEventListener('keydown', event => {
 window.matchMedia('(min-width: 761px)').addEventListener('change', event => {
   if (event.matches) closeMenu();
 });
-
-const reservationDialog = document.querySelector('#reservation-dialog');
-document.querySelectorAll('[data-reservation]').forEach(button => {
-  button.addEventListener('click', () => reservationDialog.showModal());
-});
-reservationDialog.querySelectorAll('.dialog-close, .dialog-done').forEach(button => {
-  button.addEventListener('click', () => reservationDialog.close());
-});
-reservationDialog.addEventListener('click', event => {
-  const bounds = reservationDialog.getBoundingClientRect();
-  if (event.target === reservationDialog &&
-      (event.clientX < bounds.left || event.clientX > bounds.right ||
-       event.clientY < bounds.top || event.clientY > bounds.bottom)) {
-    reservationDialog.close();
-  }
-});
