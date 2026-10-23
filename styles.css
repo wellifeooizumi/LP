@@ -62,3 +62,15 @@
 .director-license{display:inline-block;padding:7px 14px;border:1px solid #d7ba8a;color:var(--accent);font-size:12px}
 .director-copy p{font-size:13px;line-height:2.2;margin-bottom:20px}
 @media(max-width:760px){.hero-announcement{font-size:10px;line-height:1.9}.review-intro{grid-template-columns:1fr;gap:24px;padding-block:36px}.review-intro h2{font-size:24px}.review-score{border-left:0;border-top:1px solid var(--line);padding:22px 0 0}.review-score>strong{font-size:60px}.director-grid{grid-template-columns:1fr;gap:30px}.director h2{font-size:28px}.director-copy p{font-size:12px}.director h3.director-name{font-size:34px}}
+
+/* 提供いただいた施術写真の顔と手元が見える位置で表示 */
+.hero-photo img{object-position:40% center}
+
+/* 院長の提供ポートレートは縦横比を保って掲載 */
+.director-grid{grid-template-columns:.85fr 1fr;gap:72px;align-items:center}
+.director-portrait{margin:0;position:relative}
+.director-portrait img{display:block;width:100%;height:auto;border-radius:100px 0 0 0}
+.director-portrait figcaption{font-size:10px;color:var(--muted);margin-top:10px}
+.director-info .director-copy{margin-top:25px}
+.director-info .director-copy p{font-size:12px;line-height:2.1;margin-bottom:16px}
+@media(max-width:760px){.director-grid{grid-template-columns:1fr;gap:28px}.director-portrait{width:100%;max-width:380px;margin-inline:auto}.director-portrait img{border-radius:75px 0 0 0}.director-info .director-copy{margin-top:24px}}
