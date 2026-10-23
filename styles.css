@@ -100,3 +100,6 @@
 
 .hero-seal>span{font-family:Georgia,serif;font-size:19px;font-weight:600;letter-spacing:.01em}
 @media(max-width:760px){.hero-seal>span{font-size:15px}}
+
+.hero-seal small.seal-message{font-size:7px;line-height:1.6;text-align:center;letter-spacing:0;padding:0 5px}
+@media(max-width:760px){.hero-seal small.seal-message{font-size:6px;line-height:1.5;padding:0 3px}}
