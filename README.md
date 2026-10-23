@@ -44,3 +44,9 @@ python3 -m http.server 8000 --bind 0.0.0.0
 ## 確認済み
 
 Chromiumで幅1440 / 768 / 390 / 320pxの表示、横スクロールがないこと、画像の読み込み、ページ内リンク、LINEリンク、FAQ、モバイルメニューと画面下部の案内ボタンを確認しました。
+
+## 別案：開院案内型LP
+
+`opening.html` と `opening.css` は、ほねごりの参考PDFにある青・黄色の配色、白い記事面、黄色い見出し帯、体験会バナーを参考にした別案です。元の `index.html` は変更していません。キャラクターやロゴ・無料キャンペーンは転用せず、越谷院の情報・院長写真・500円体験会・公式LINEを使用しています。
+
+GitHub Pagesの公開が有効であれば、公開後の別案URLは `https://wellifeooizumi.github.io/LP/opening.html` です。
