@@ -29,3 +29,6 @@ body{background:#faf5e7}
 
 .campaign h3>span.campaign-event{font-size:clamp(27px,4.3vw,53px);line-height:1.5;padding:12px 25px}.campaign-top{flex-wrap:wrap}
 @media(max-width:700px){.sticky>span.sticky-event{display:flex;flex-direction:column;gap:2px;font-size:8px;line-height:1.5;white-space:normal}.sticky-event>span{display:block}.sticky .sticky-event strong{font-size:22px}.campaign h3>span.campaign-event{font-size:25px;padding:10px 14px}.campaign-top>span{font-size:8px;white-space:normal;text-align:left}}
+
+@media(max-width:700px){.header-line{font-size:9px;padding-inline:10px}.sticky a{font-size:11px;padding-inline:12px}}
+@media(max-width:360px){.header-line{font-size:8px;padding-inline:8px}.sticky a{font-size:10px}}
