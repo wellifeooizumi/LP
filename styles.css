@@ -89,3 +89,11 @@
 
 @media(max-width:760px){.header-cta.line-cta{font-size:9px}.mobile-sticky .sticky-line-link{font-size:10px;padding-inline:11px}.line-steps h3{font-size:16px}.line-caption{color:#875017}}
 @media(max-width:370px){.header-cta.line-cta{font-size:8px;padding-inline:5px}.mobile-sticky .sticky-line-link{font-size:9px;padding-inline:8px}}
+
+/* LINE登録特典を見つけやすく表示 */
+.benefit-highlight{display:inline-flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:2px 6px;background:#fff0cf;color:#155d2f;border:1px solid #e4ba74;border-left:4px solid #087d35;border-radius:7px;padding:10px 14px;font-size:16px;font-weight:700;line-height:1.8;letter-spacing:.02em;margin:4px 0 8px;max-width:100%}
+.benefit-highlight>span{display:inline-block}
+.experience-actions p{flex:1;min-width:0}
+.concept-sign{font-style:normal;font-weight:600;font-size:34px;letter-spacing:.04em}
+.concept-meaning>p{font-size:12px;line-height:2;color:var(--ink);margin-top:10px}
+@media(max-width:760px){.benefit-highlight{font-size:13px;padding:9px 11px;gap:0 5px}.concept-sign{font-size:30px}.concept-meaning>p{font-size:12px}.hero .benefit-highlight{justify-content:flex-start}.closing .benefit-highlight{font-size:13px}}
