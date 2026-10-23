@@ -74,3 +74,5 @@
 .director-info .director-copy{margin-top:25px}
 .director-info .director-copy p{font-size:12px;line-height:2.1;margin-bottom:16px}
 @media(max-width:760px){.director-grid{grid-template-columns:1fr;gap:28px}.director-portrait{width:100%;max-width:380px;margin-inline:auto}.director-portrait img{border-radius:75px 0 0 0}.director-info .director-copy{margin-top:24px}}
+
+.google-review-link{display:block;font-size:11px;text-decoration:underline;text-underline-offset:4px;color:var(--accent);line-height:1.9;margin:8px 0}
