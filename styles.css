@@ -97,3 +97,6 @@
 .concept-sign{font-style:normal;font-weight:600;font-size:34px;letter-spacing:.04em}
 .concept-meaning>p{font-size:12px;line-height:2;color:var(--ink);margin-top:10px}
 @media(max-width:760px){.benefit-highlight{font-size:13px;padding:9px 11px;gap:0 5px}.concept-sign{font-size:30px}.concept-meaning>p{font-size:12px}.hero .benefit-highlight{justify-content:flex-start}.closing .benefit-highlight{font-size:13px}}
+
+.hero-seal>span{font-family:Georgia,serif;font-size:19px;font-weight:600;letter-spacing:.01em}
+@media(max-width:760px){.hero-seal>span{font-size:15px}}
