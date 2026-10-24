@@ -110,3 +110,7 @@
 
 /* PC・スマートフォンとも同じライト配色を使用 */
 :root{color-scheme:only light}
+
+/* iPhoneでも絵文字にならない共通の装飾図形 */
+.seal-symbol{display:block;width:34px;height:34px;color:var(--accent);margin:4px auto;flex-shrink:0}
+@media(max-width:760px){.seal-symbol{width:26px;height:26px;margin:3px auto}}
