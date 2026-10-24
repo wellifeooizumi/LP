@@ -103,3 +103,7 @@
 
 .hero-seal small.seal-message{font-size:7px;line-height:1.6;text-align:center;letter-spacing:0;padding:0 5px}
 @media(max-width:760px){.hero-seal small.seal-message{font-size:6px;line-height:1.5;padding:0 3px}}
+
+/* お問い合わせボタンを含むヘッダーがスクロールに追従 */
+.site-header{position:sticky;top:0;z-index:40;box-shadow:0 3px 14px #4930180d}
+@media(max-width:760px){.mobile-nav{position:fixed;top:78px;z-index:39}}
