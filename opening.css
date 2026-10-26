@@ -54,3 +54,10 @@ body{background:#faf5e7}
 .campaign-note{background:transparent;border-top:1px solid #dacbb5;border-radius:0;font-size:11px;color:#786651;margin-top:24px;padding:16px 0 0}
 @media(max-width:700px){.intro-meta{gap:9px;margin-top:20px}.intro-meta>span{font-size:15px;line-height:1.8;padding:8px 12px}.campaign{padding:24px 19px}.campaign-top{font-size:10px;padding-bottom:16px;justify-content:center}.campaign-top>span{font-size:9px;text-align:center}.campaign-kicker{font-size:11px;line-height:1.9;margin-top:25px}.campaign h3{font-size:17px}.campaign h3>span.campaign-event{font-size:27px;letter-spacing:.02em;padding:6px 0 10px}.campaign-price{min-width:190px;margin-top:12px;padding-top:15px;gap:10px}.campaign-price strong{font-size:82px}.campaign-price>span:last-child{font-size:21px}.campaign-note{font-size:10px;line-height:1.9;margin-top:20px}.line-button .cta-copy{font-size:14px}}
 @media(max-width:360px){.intro-meta>span{font-size:14px}.campaign h3>span.campaign-event{font-size:24px}.line-button .cta-copy{font-size:12px}}
+
+/* 開院案内ページの上部お問い合わせをスクロールに追従 */
+html{scroll-padding-top:150px}
+.header{position:sticky;top:0;z-index:40;background:#faf5e7;box-shadow:0 3px 14px #4930180d}
+.header-line{display:flex;align-items:center;justify-content:center;gap:12px;text-align:center;line-height:1.7}
+.block{scroll-margin-top:0}
+@media(max-width:700px){html{scroll-padding-top:100px}.header-line{gap:7px}}
