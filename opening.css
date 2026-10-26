@@ -36,3 +36,21 @@ body{background:#faf5e7}
 .benefit-highlight{display:inline-flex;flex-wrap:wrap;justify-content:center;gap:0 6px;background:#fff0cf;color:#155d2f;border:1px solid #e4ba74;border-left:4px solid #087d35;border-radius:8px;padding:12px 18px;font-size:19px;line-height:1.8;font-weight:700;margin:4px 0 10px;max-width:100%}
 .benefit-highlight>span{display:inline-block}
 @media(max-width:700px){.benefit-highlight{font-size:14px;padding:10px 12px;gap:0 4px}}
+
+/* 冒頭の特徴を読みやすく、体験会は落ち着いた案内に */
+.intro-meta{gap:12px;margin-top:26px}
+.intro-meta>span{font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;font-size:17px;font-weight:700;line-height:1.8;padding:9px 16px;background:#f8f1e5;color:#62452f;letter-spacing:.03em}
+.line-button .cta-copy{display:block;text-align:center;line-height:1.65;font-size:inherit}
+.campaign{background:linear-gradient(135deg,#faf7f0,#f1e7d7);border:1px solid #d9c5a9;border-radius:10px;padding:36px 38px;color:#62452f;box-shadow:0 8px 24px #62452f08}
+.campaign-top{color:#72563d;border-bottom:1px solid #dacbb5;padding-bottom:20px;letter-spacing:.03em}
+.campaign-top>span{background:transparent;color:#72563d;border:1px solid #c9ad88;border-radius:4px;padding:6px 12px}
+.campaign-kicker{color:#786651;font-weight:500;letter-spacing:.05em;margin-top:32px}
+.campaign h3{font-weight:500;color:#786651;font-size:21px;margin-top:18px}
+.campaign h3>span.campaign-event{background:transparent;color:#62452f;box-shadow:none;border-radius:0;font-size:clamp(29px,4vw,48px);font-weight:600;letter-spacing:.06em;line-height:1.7;padding:8px 0 12px;margin-top:10px}
+.campaign-price{border-top:1px solid #dacbb5;width:fit-content;min-width:220px;margin:18px auto 0;padding-top:20px;color:#62452f;gap:13px}
+.campaign-price strong{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:100px;letter-spacing:-.04em}
+.campaign-price>span:first-child{font-size:12px;letter-spacing:.1em}
+.campaign-price>span:last-child{font-size:23px;font-weight:500}
+.campaign-note{background:transparent;border-top:1px solid #dacbb5;border-radius:0;font-size:11px;color:#786651;margin-top:24px;padding:16px 0 0}
+@media(max-width:700px){.intro-meta{gap:9px;margin-top:20px}.intro-meta>span{font-size:15px;line-height:1.8;padding:8px 12px}.campaign{padding:24px 19px}.campaign-top{font-size:10px;padding-bottom:16px;justify-content:center}.campaign-top>span{font-size:9px;text-align:center}.campaign-kicker{font-size:11px;line-height:1.9;margin-top:25px}.campaign h3{font-size:17px}.campaign h3>span.campaign-event{font-size:27px;letter-spacing:.02em;padding:6px 0 10px}.campaign-price{min-width:190px;margin-top:12px;padding-top:15px;gap:10px}.campaign-price strong{font-size:82px}.campaign-price>span:last-child{font-size:21px}.campaign-note{font-size:10px;line-height:1.9;margin-top:20px}.line-button .cta-copy{font-size:14px}}
+@media(max-width:360px){.intro-meta>span{font-size:14px}.campaign h3>span.campaign-event{font-size:24px}.line-button .cta-copy{font-size:12px}}
