@@ -115,14 +115,62 @@
 .seal-symbol{display:block;width:34px;height:34px;color:var(--accent);margin:4px auto;flex-shrink:0}
 @media(max-width:760px){.seal-symbol{width:26px;height:26px;margin:3px auto}}
 
-/* 2026-11-09: 500円体験会のヘッダー案内と大泉・越谷の紹介 */
-.desktop-nav .header-experience-link{display:inline-flex;align-items:center;gap:9px;padding:8px 12px;border:1px solid #d5ad79;border-radius:5px;background:#fff1d8;color:#70431e;font-size:11px;font-weight:700;white-space:nowrap;letter-spacing:0}
-.desktop-nav .header-experience-link strong{font-family:Georgia,serif;font-size:19px;color:#a34e12;line-height:1}
-.desktop-nav .header-experience-link:hover{background:#f8e4c3;color:#70431e}
+/* 2026-11-09: 茶系アクセントで500円体験会と信頼の紹介を強調 */
+.desktop-nav .header-experience-link{
+  display:inline-flex;align-items:center;gap:10px;padding:10px 15px;
+  border:1px solid #a1764c;border-radius:6px;
+  background:#694126;color:#fff7e8;
+  box-shadow:0 3px 11px #49301822;
+  font-size:11px;font-weight:700;white-space:nowrap;letter-spacing:0;
+  transition:background .2s,box-shadow .2s,transform .2s
+}
+.desktop-nav .header-experience-link strong{
+  font-family:Georgia,serif;font-size:21px;color:#ffe0a0;line-height:1;font-weight:700
+}
+.desktop-nav .header-experience-link:hover{
+  background:#855332;color:#fff7e8;box-shadow:0 5px 15px #49301833;transform:translateY(-1px)
+}
 .mobile-experience-banner{display:none}
-.review-intro{background:#fff4e3;border:1px solid #ead9bc;border-left:4px solid #ad6a30;border-radius:7px;padding:35px 28px;margin-block:22px 12px}
-.review-intro h2{color:#513720;font-weight:600}
-.review-intro .trust-highlight{color:#a55216;background:linear-gradient(transparent 73%,#f3d1a4 73%)}
-@media(max-width:1160px) and (min-width:761px){.site-header{gap:16px;padding-inline:2%}.desktop-nav{gap:13px}.desktop-nav .header-experience-link{font-size:10px;padding:8px}.desktop-nav .header-experience-link strong{font-size:17px}}
-@media(max-width:760px){.mobile-experience-banner{display:flex;align-items:center;justify-content:center;gap:12px;padding:11px 16px;background:#fff0d5;color:#75421c;border-bottom:1px solid #e2bf94;font-weight:700;font-size:13px;letter-spacing:.02em;text-align:center}.mobile-experience-banner strong{font-family:Georgia,serif;font-size:23px;color:#a34e12;line-height:1}.review-intro{padding:26px 18px;margin-block:12px}.review-intro h2{font-size:23px}}
-@media(max-width:370px){.mobile-experience-banner{font-size:11px;gap:8px}.mobile-experience-banner strong{font-size:20px}}
+.review-intro{
+  background:#efdfcb;border:1px solid #dcc4a7;border-radius:9px;
+  padding:22px;margin-block:25px 15px
+}
+.review-intro>div:first-child{
+  background:#684129;border-radius:7px;
+  padding:27px 29px;color:#fff6e8;
+  box-shadow:0 5px 18px #49301817
+}
+.review-intro>div:first-child .eyebrow{color:#f8d5a4}
+.review-intro>div:first-child h2{font-size:clamp(23px,2.3vw,29px);color:#fff8ee;font-weight:600;line-height:1.8}
+.review-intro>div:first-child p:not(.eyebrow){color:#f6e6d5}
+.review-intro .trust-highlight{
+  color:#ffdd91;background:linear-gradient(transparent 78%,#c18a42 78%);
+  font-weight:700
+}
+.review-intro .review-score{border-left-color:#d2b18b}
+@media(max-width:1160px) and (min-width:761px){
+  .site-header{gap:16px;padding-inline:2%}
+  .desktop-nav{gap:13px}
+  .desktop-nav .header-experience-link{font-size:10px;padding:9px}
+  .desktop-nav .header-experience-link strong{font-size:18px}
+  .review-intro{gap:25px}
+  .review-intro>div:first-child{padding:23px}
+}
+@media(max-width:760px){
+  .mobile-experience-banner{
+    display:flex;align-items:center;justify-content:center;gap:12px;
+    padding:13px 16px;background:#694126;color:#fff6e9;
+    border-bottom:2px solid #c49658;
+    font-weight:700;font-size:13px;letter-spacing:.02em;text-align:center
+  }
+  .mobile-experience-banner strong{
+    font-family:Georgia,serif;font-size:23px;color:#ffdd91;line-height:1
+  }
+  .review-intro{padding:14px;margin-block:14px;gap:24px}
+  .review-intro>div:first-child{padding:24px 18px}
+  .review-intro>div:first-child h2{font-size:23px}
+}
+@media(max-width:370px){
+  .mobile-experience-banner{font-size:11px;gap:8px}
+  .mobile-experience-banner strong{font-size:20px}
+}
