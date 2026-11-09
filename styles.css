@@ -114,3 +114,15 @@
 /* iPhoneでも絵文字にならない共通の装飾図形 */
 .seal-symbol{display:block;width:34px;height:34px;color:var(--accent);margin:4px auto;flex-shrink:0}
 @media(max-width:760px){.seal-symbol{width:26px;height:26px;margin:3px auto}}
+
+/* 2026-11-09: 500円体験会のヘッダー案内と大泉・越谷の紹介 */
+.desktop-nav .header-experience-link{display:inline-flex;align-items:center;gap:9px;padding:8px 12px;border:1px solid #d5ad79;border-radius:5px;background:#fff1d8;color:#70431e;font-size:11px;font-weight:700;white-space:nowrap;letter-spacing:0}
+.desktop-nav .header-experience-link strong{font-family:Georgia,serif;font-size:19px;color:#a34e12;line-height:1}
+.desktop-nav .header-experience-link:hover{background:#f8e4c3;color:#70431e}
+.mobile-experience-banner{display:none}
+.review-intro{background:#fff4e3;border:1px solid #ead9bc;border-left:4px solid #ad6a30;border-radius:7px;padding:35px 28px;margin-block:22px 12px}
+.review-intro h2{color:#513720;font-weight:600}
+.review-intro .trust-highlight{color:#a55216;background:linear-gradient(transparent 73%,#f3d1a4 73%)}
+@media(max-width:1160px) and (min-width:761px){.site-header{gap:16px;padding-inline:2%}.desktop-nav{gap:13px}.desktop-nav .header-experience-link{font-size:10px;padding:8px}.desktop-nav .header-experience-link strong{font-size:17px}}
+@media(max-width:760px){.mobile-experience-banner{display:flex;align-items:center;justify-content:center;gap:12px;padding:11px 16px;background:#fff0d5;color:#75421c;border-bottom:1px solid #e2bf94;font-weight:700;font-size:13px;letter-spacing:.02em;text-align:center}.mobile-experience-banner strong{font-family:Georgia,serif;font-size:23px;color:#a34e12;line-height:1}.review-intro{padding:26px 18px;margin-block:12px}.review-intro h2{font-size:23px}}
+@media(max-width:370px){.mobile-experience-banner{font-size:11px;gap:8px}.mobile-experience-banner strong{font-size:20px}}
