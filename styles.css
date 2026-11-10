@@ -174,3 +174,50 @@
   .mobile-experience-banner{font-size:11px;gap:8px}
   .mobile-experience-banner strong{font-size:20px}
 }
+
+/* 2026-11-10: 上部WEB予約バナーを体験会バナーの左へ追加 */
+.desktop-nav .header-reserve-link{
+  display:inline-flex;align-items:center;justify-content:center;gap:5px;
+  padding:11px 14px;background:#966034;color:#fff9ed;
+  border:1px solid #b28a5e;border-radius:6px;
+  box-shadow:0 3px 11px #49301821;white-space:nowrap;
+  font-size:12px;font-weight:700;letter-spacing:.01em;
+  transition:background .2s,transform .2s
+}
+.desktop-nav .header-reserve-link:hover{background:#774526;color:#fff9ed;transform:translateY(-1px)}
+.top-quick-links{display:none}
+@media(max-width:1320px){
+  .desktop-nav .header-reserve-link,
+  .desktop-nav .header-experience-link{display:none}
+  .top-quick-links{
+    display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    position:sticky;top:100px;z-index:35;background:#f3e5d3;
+    border-bottom:1px solid #d2b28a;box-shadow:0 3px 9px #49301810
+  }
+  .top-quick-links a{
+    display:flex;align-items:center;justify-content:center;
+    min-width:0;min-height:52px;padding:10px 12px;
+    text-align:center;font-size:12px;font-weight:700;line-height:1.4
+  }
+  .top-quick-links .top-reserve-link{
+    color:#fff7eb;background:#80502e;border-right:1px solid #c49d6c
+  }
+  .top-quick-links .top-reserve-link:hover{background:#684026}
+  .top-quick-links .top-experience-link{
+    color:#fff7eb;background:#694126;gap:8px
+  }
+  .top-quick-links .top-experience-link:hover{background:#815236}
+  .top-quick-links .top-experience-link strong{
+    font-family:Georgia,serif;font-size:21px;color:#ffdf9e;white-space:nowrap
+  }
+}
+@media(max-width:760px){
+  .top-quick-links{top:78px}
+  .top-quick-links a{padding:10px 6px;min-height:56px;font-size:11px}
+  .top-quick-links .top-experience-link{flex-direction:column;gap:0;font-size:11px}
+  .top-quick-links .top-experience-link strong{font-size:19px}
+}
+@media(max-width:370px){
+  .top-quick-links a{font-size:10px;padding-inline:4px}
+  .top-quick-links .top-experience-link{font-size:10px}
+}
